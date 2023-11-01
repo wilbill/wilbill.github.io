@@ -1,0 +1,73 @@
+/* Make first Paragraph */
+div{
+    border:1px solid black;
+     background-color: black;
+    color: white
+}
+    div.container{ 
+    display:flex; /*flex*/
+    gap:40px;
+    justify-content:space-evenly;/*space-between; */
+     
+} 
+
+div.nested{
+    width: 30%; 
+}
+
+ p.P1, p.P2, p.P3{
+    display: flex;
+    gap:20px;
+    color:rgb(209, 197, 197);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px; 
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px; 
+    width: 200px;
+    
+       
+}
+.img-responsive{
+    object-fit: cover;
+    max-width: 100;
+}
+.email-input{
+    border-radius: 50px;
+}
+.br{
+    display: inline-flex;
+}
+
+.btn{
+    border: 0px;
+    border-radius: 50px;
+    background-color: rgb(196, 13, 156);
+    margin-left: -40px;
+}
+
+ .container-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid grey;
+}
+.footer{
+      /* display: flex; */
+      /* justify-content: space-between; */
+      /* padding: 10px; */
+      /* margin: 12px;    */
+      /* justify-content: space-between; */
+}
+.footer-menu{
+    display: flex;
+    gap: 20px;
+}
+
+.colorLib {
+    /* align-self: self-start; */
+    /* margin-left: auto; */
+}
