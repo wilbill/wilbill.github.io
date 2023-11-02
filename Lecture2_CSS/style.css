@@ -1,5 +1,5 @@
 /* Make first Paragraph */
-div{
+div{ /*Applies to all divs */
     border:1px solid black;
      background-color: black;
     color: white

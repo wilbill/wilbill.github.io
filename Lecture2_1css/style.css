@@ -1,0 +1,21 @@
+.container{
+    /* display:flex; 
+    gap:40px;
+    justify-content:space-evenly;    */
+    height: 80%;
+    border: 1px solid red;
+    }
+
+body, html {
+    height: 100%;
+    margin: 1%;
+}
+
+.nested{
+    display: flex;
+    justify-content: center;
+} 
+
+.div{
+
+}
