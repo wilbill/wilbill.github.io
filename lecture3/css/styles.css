@@ -135,8 +135,21 @@ a{
     background-color: rgb(212, 221, 212);
     border:none;
 }
+.last_Part{
+    display: flex;
+    justify-content: space-between;
+    margin:120px;
+    margin-top:-100px
+}
+
+.closing{
+    background-color: #eff2f1;
+    height:60px;
+}
 
 
+
+/*Billy's css ends here*/
 
 .menu > li.active{
     opacity: 1 !important;
