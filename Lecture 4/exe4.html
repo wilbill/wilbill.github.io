@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style> 
+        p:nth-child(2) .myClass{ color: yellow; }
+    </style>  
+</head>
+<body>
+
+
+    <p>Rose</p> 
+    <p class="myClass"> 
+        Lily 
+         <label class="myClass">Chamoline</label>
+         <label class="myClass">Hibiscus</label> 
+         <label>champa</label>  
+    </p> 
+    <p class="myClass">sunflower</p> 
+
+    <pre>
+        
+        Ans1: Chamolin Hibiscus                IF p:nth-child(2) .myClass{ color: yellow; }
+        Ans1: Lily Chamoline Hibiscus champa   IF p:nth-child(2).myClass{ color: yellow; } 
+    </pre>
+    
+</body>
+</html>

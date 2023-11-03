@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article  article > p~p {color: blue;}
+        </style>
+</head>
+<body>
+    
+    Write the style to color the text, ‘Autumn fruiting’ to blue. DONT CHANGE HTML BY ADDING CLASSES.
+    <p>Fruits</p> 
+    <p>Grapes</p>
+    <article>Berries 
+        <article>Raspberry 
+            <p>Summer fruiting</p> 
+            <p>Autumn fruiting</p> 
+        </article> 
+        <p>Pear</p> 
+        <p>Grapes</p> 
+    </article> 
+    <pre>
+     Ans: article article > p:nth-child(2){color:blue;}
+     Ans: article > article> p:nth-child(2){color:blue;} 
+     Ans: article > article > p+p{color:blue;}
+     Ans: article article > p+p{color:blue;}
+     Ans: article article p+p {color:blue;}
+     Ans: article article p~p {color:blue;}
+     Ans: article > article  p~p {color: blue;}
+     Ans: article  article > p~p {color: blue;}
+     Ans: And many more
+    </pre>
+</body>
+</html>
