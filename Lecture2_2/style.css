@@ -1,0 +1,56 @@
+body{
+    border:1px solid red;
+    margin: 1px;
+    height: 620px;
+}
+
+.middle{
+    display:flex;
+    border: 1px solid red;
+    margin: 100px 20px 20px 20px;
+    height: 250px;
+}
+.left{
+    border: 1px solid rgb(178, 178, 236);
+    margin: 70px;
+    width: 35%;
+    background-color: rgb(164, 223, 240);
+}
+.right{
+    height:70px;
+    border: 1px solid pink;
+    margin: 70px;
+    width: 45%;
+    background-color: rgb(240, 164, 223);
+}
+
+.last{
+    border: 1px solid red;
+    height:50px;
+    margin: 30px;
+    width: 70%;
+    position: relative;
+    left: 20%;
+    
+}
+
+.last2{
+    border: 1px solid red;
+    height:50px;
+    margin: 30px;
+    width: 60%;   
+    position: relative;
+    left: 25%;
+    top:-65px;
+}
+.last3{
+    border: 1px solid red;
+    height:50px;
+    margin: 30px;
+    width: 50%;
+    position: relative;
+    left: 30%;
+    top:-21%;
+
+    
+}
