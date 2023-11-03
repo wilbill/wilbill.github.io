@@ -1,21 +1,26 @@
-.container{
-    /* display:flex; 
-    gap:40px;
-    justify-content:space-evenly;    */
-    height: 80%;
-    border: 1px solid red;
-    }
-
-body, html {
-    height: 100%;
-    margin: 1%;
+body{
+    border:1px solid blue;
+    margin: 1px;
+    height: 600px;
 }
 
-.nested{
-    display: flex;
-    justify-content: center;
-} 
-
-.div{
+.inner-box{
+    border:1px solid blue;
+    margin: 100px;
+    height:200px;
+    /* border: 10px 10px 10px 10px; */
 
 }
+
+.yellow-line{
+
+    border:1px solid yellow;
+    height:35px;
+    margin-bottom: 20px;
+    background-color: yellow;
+    margin: 40px;
+}   
+
+
+
+
