@@ -1,0 +1,29 @@
+
+
+
+.container{
+    /* border: 1px solid red; */
+    height: 100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 15px;
+
+}
+
+.a-div{
+    border:1px solid red;
+    height: 100px;
+}
+
+.b-div{
+    border:1px solid red;
+    height: 100px;
+}
+
+.down-divs{
+    /* border:1px solid black; */
+    height: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
