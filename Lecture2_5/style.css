@@ -1,0 +1,27 @@
+
+.body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.item{
+     text-align: flex-start;
+     background-color: none;
+     padding: 1em;
+     width: 30%;;
+     height: 150px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
