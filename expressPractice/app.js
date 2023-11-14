@@ -5,23 +5,36 @@ const app = express() //calling a child
 
 let myArray =[];
 let loginCount=0;
-
+let i=0;
 //If u want to use a static directory which serves files, css, images etc, use this line below
-app.use(express.static(path.join(__dirname, 'html')/*,{extensions:['html']} */))
+app.use(express.static(path.join(__dirname, 'html'), {extensions:['html']}))
 
 //API MIDDLEWARE
 app.use(express.urlencoded({extended: false})); //accepts data in json format
 app.use(express.json())   //Decodes data sent thru the url form
 
+//sendFile is used to send an already existing file
 // app.get("/array", function(req, res, next){
 //     console.log(myArray)
 //     res.sendFile(path.join(__dirname, "html", "arrays.html"))
 // })
 
+let result
 //data we get is in body of request(used for debugging)
 app.post('/postData', function(req, res){
-    console.log(req.body); 
-    res.json({message: req.body})
+    //console.log(req.body); 
+    //if(req.body.Surname=="Billy") console.log("Thanks man, ure great")
+    result = req.body;
+    res.redirect("/viewPage");
+    //result = req.body;
+    //console.log(result)
+    //res.send(`<h1>${result.meals}</h1>`);
+})
+
+app.get("/viewPage", function(req, res){
+    res.send(`<p> ${result.JavaScript}
+    Welcome ${result ? result.Surname + " "+result.LastName : "No data available"}</p>
+    `)
 })
 
 
@@ -52,5 +65,5 @@ app.get('/', function(req, res){ //the forward slash means all pages, get=> 4 ge
 app.use(function(error, req, res, next){
     console.log('404');
     next("Error")
-    req.send("404");
+    res.status(404).send("Not found");
 })
