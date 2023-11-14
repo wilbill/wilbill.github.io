@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        function add(){
+            let theParagraph = $('<p> My Paragraph</p>')
+            let h = $('<header><section>Section</section></header>')
+            console.log()
+            $('button').before(theParagraph)
+            $('button').after(h)
+        }
+    </script>
+
+    //check about the selectors from 
+
+</head>
+<body>
+    <button onclick="add()">Add element</button>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="/postData" method="POST">
+
+        <input type="radio" value="" name="meals" checked>Food  <!-- radio should have same name -->
+        <input type="radio" value="" name="meals">Water <!-- should have same name -->
+        </br>
+
+        <input type="text" value="" name="Surname">Surname
+        <input type="text" value="" name="LastName">LastName
+        <br/>
+
+        <textArea id="tArea" value="" name="Description">Description</textArea>
+        <br/>
+
+        <!-- checkbox and option select all need values -->
+        <input type="checkbox" value="JavaScript" name="JavaScript" checked>JavaScript 
+        <input type="checkbox" value="Java" name="Java">Java
+        <input type="checkbox" value="Python" name="Python">Python
+        <br/>
+    
+        <select name="multiselect" multiple>
+            <option value="Piano" selected>Piano</option>
+            <option value="Guitar" selected>Guitar</option>
+            <option value="Drums">Drums</option>
+        </select>
+        <br/>
+    
+        <select name="singleselect">
+            <option value="House" selected>House</option>
+            <option value="Flat">Flat</option>
+            <option value="2 Floors">2 Floors</option>
+            <option value="5 Floors">5 Floors</option>
+        </select>
+        <br/>
+    
+       
+    
+        <input type="submit" value="submit">
+    
+    </form>
+    
+</body>
+</html>
